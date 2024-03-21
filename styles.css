@@ -1,0 +1,48 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 94, 94);
+    background-image: url('b1.jpg'); /* Menambahkan gambar latar belakang */
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan layar */
+}
+
+.container {
+    max-width: 800px;
+    color: aliceblue;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(245, 59, 59, 0.5); /* Warna latar belakang dengan tingkat transparansi */
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content {
+    text-align: center;
+    color: aliceblue;
+}
+
+.gambar {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-height: 400px; /* Atur tinggi maksimum gambar */
+    display: block;
+}
+
+/* Responsif untuk perangkat dengan lebar layar <= 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .gambar {
+        max-height: 200px; /* Atur tinggi maksimum gambar untuk perangkat kecil */
+    }
+}
